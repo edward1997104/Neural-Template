@@ -4,16 +4,17 @@ Neural Template: Topology-aware Reconstruction and Disentangled Generation of 3D
 ![gallery](figures/gallery.png)
 
 # Environments
-You can create an conda environment for this project using the following commands:
+You can create and activate a conda environment for this project using the following commands:
 ```angular2html
-conda create -n NeuralTemplate -r requirement.ymal
+conda env create -f environment.yml
+conda activate NeuralTemplate
 ```
 
 # Dataset
-For the dataset, we use dataset provided by [IM-NET](https://github.com/czq142857/IM-NET-pytorch) for training and evaluation. We provide another zip file ([link](https://drive.google.com/file/d/1--C2xUp0yao_nHDNvEpL3a1ZpTVC139J/view?usp=sharing)) which should be unzipped in ```data``` before any training or inference.
+For the dataset, we use the dataset provided by [IM-NET](https://github.com/czq142857/IM-NET-pytorch) for training and evaluation. We provide another zip file ([link](https://drive.google.com/file/d/1--C2xUp0yao_nHDNvEpL3a1ZpTVC139J/view?usp=sharing)) which should be unzipped in ```data``` before any training or inference.
 
 # Training
-There are all together three commands for three training phases (Continuous training, Discrete training, Image encoder training).
+There are altogether three commands for three training phases (Continuous training, Discrete training, Image encoder training).
 
 For the continuous phase, you can train the model by using the following command:
 ```angular2html
@@ -25,7 +26,7 @@ For the discrete phase, you should first specify the ```network_resume_path``` v
 python train/implicit_trainer.py --resume_path ./configs/config_discrete.py
 ```
 
-Lastly for the Image encoder training, you should first specify the ```auto_encoder_config_path```  and ```auto_encoder_resume_path``` in ```config_image.py``` similiarly, and run the following command to start training:
+Lastly, for the Image encoder training, you should specify the ```auto_encoder_config_path```  and ```auto_encoder_resume_path``` in ```config_image.py``` similarly, and run the following command to start training:
 ```angular2html
 python train/image_trainer.py --resume_path ./configs/config_image.py
 ```
