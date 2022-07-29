@@ -46,6 +46,8 @@ python utils/image_mesh_visualization.py
 
 If you need test your own trained model, you change the ```testing_folder``` variable in these two python files.
 
+### Note: 
+you need to set ```PYTHONPATH=<project root directory>``` before running any above commands.
 
 ### Citation
 If you find our work useful in your research, please consider citing:
