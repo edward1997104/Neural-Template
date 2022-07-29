@@ -13,7 +13,7 @@ conda create -n NeuralTemplate -r requirement.ymal
 For the dataset, we use dataset provided by [IM-NET](https://github.com/czq142857/IM-NET-pytorch) for training and evaluation. We provide another zip file ([link](https://drive.google.com/file/d/1--C2xUp0yao_nHDNvEpL3a1ZpTVC139J/view?usp=sharing)) which should be unzipped in ```data``` before any training or inference.
 
 # Training
-There are all together three commands for three training phases (Discrete training, Continuous training, Image encoder training).
+There are all together three commands for three training phases (Continuous training, Discrete training, Image encoder training).
 
 For the continuous phase, you can train the model by using the following command:
 ```angular2html
@@ -31,7 +31,7 @@ python train/image_trainer.py --resume_path ./configs/config_image.py
 ```
 
 # Testing
-We provide the pre-trained models used in the paper for reproducing the results. You can unzip the file ([link](https://drive.google.com/file/d/177bC-AresW8tMq54_q84K6Eav_hGxUZE/view?usp=sharing)) in the ```pretrain``` folder.
+We provide the pre-trained models used in the paper for reproducing the results. You can unzip the file ([link](https://drive.google.com/file/d/1--C2xUp0yao_nHDNvEpL3a1ZpTVC139J/view?usp=sharing)) in the ```pretrain``` folder.
 
 For the evaluation of the autoencoder, you can use this command:
 ```angular2html
