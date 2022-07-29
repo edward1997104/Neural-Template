@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
 
     ## folder for testing
-    testing_folder = r'.\pretrain\phase_2_model'
+    testing_folder = r'./pretrain/phase_2_model'
     config_path = os.path.join(testing_folder, 'config.py')
 
     ## import config here
@@ -58,7 +58,7 @@ if __name__ == '__main__':
 
     ## dataload
     ### create dataset
-    data_path = r'.\data\all_vox256_img\all_vox256_img_test.hdf5'
+    data_path = r'./data/all_vox256_img/all_vox256_img_test.hdf5'
     testing_flag = True
     if os.path.exists(config.data_path) and not testing_flag:
         data_path = config.data_path
