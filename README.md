@@ -11,7 +11,7 @@ conda activate NeuralTemplate
 ```
 
 # Dataset
-For the dataset, we use the dataset provided by [IM-NET](https://github.com/czq142857/IM-NET-pytorch) for training and evaluation. We provide another zip file ([link](https://drive.google.com/file/d/1--C2xUp0yao_nHDNvEpL3a1ZpTVC139J/view?usp=sharing)) which should be unzipped in ```data``` before any training or inference.
+For the dataset, we use the dataset provided by [IM-NET](https://github.com/czq142857/IM-NET-pytorch) for training and evaluation. We provide another zip file ([link](https://drive.google.com/file/d/177bC-AresW8tMq54_q84K6Eav_hGxUZE/view?usp=sharing)) which should be unzipped in ```data``` before any training or inference.
 
 # Training
 There are altogether three commands for three training phases (Continuous training, Discrete training, Image encoder training).
