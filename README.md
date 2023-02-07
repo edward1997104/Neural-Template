@@ -54,7 +54,7 @@ If you find our work useful in your research, please consider citing:
 ```
 @inproceedings{hui2022template,
     title = {Neural Template: Topology-aware Reconstruction and Disentangled Generation of 3D Meshes},
-    author = {Ka-Hei Hui* and Ruihui Li* and Jingyu Wu and Chi-Wing Fu(* joint first authors)},
+    author = {Ka-Hei Hui* and Ruihui Li* and Jingyu Hu and Chi-Wing Fu(* joint first authors)},
     booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
     year={2022}
 }
